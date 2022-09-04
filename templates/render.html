@@ -1,8 +1,15 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    </head>
-    <body>
-    <h1>render template</h1>
-    </body>
-</html>
+<!-- コードを追加 -->
+{% if user_id %}
+<p>{{user_id}}</p>
+{% endif %}
+<!-------------------->
+<form class="form-inline" method="post">
+   <div class="form-group">
+      <label class="sr-only" for="user_id"></label>
+      <div class="input-group">
+         <span class="input-group-addon">@</span>
+         <input id="user_id" name="user_id" placeholder="ここにツイッターのIDを入力してください。" type="text" class="form-control">
+      </div>
+   </div>
+<button type="submit" class="btn btn-primary">取得する</button>
+</form>
