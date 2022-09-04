@@ -12,13 +12,13 @@ def hello():
 @app.route('/render', methods = ["GET" , "POST"])
 def index():
 
-   if request.method == 'POST':
-       user_id = request.form['user_id'] # formのname = "user_id"を取得
-       return render_template('render.html', user_id = user_id)
-   else:
-       return render_template('render.html')
+#   if request.method == 'POST':
+#       user_id = request.form['user_id'] # formのname = "user_id"を取得
+#       return render_template('render.html', user_id = user_id)
+#   else:
+#       return render_template('render.html')
 
-#    return render_template('render.html')
+    return render_template('render.html')
 
 
 if __name__ == '__main__':
